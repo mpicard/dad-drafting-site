@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import TextInput from '../components/text-input';
+import Input from '../components/input';
 
 const SecondPage = () => (
   <Layout>
@@ -12,16 +12,15 @@ const SecondPage = () => (
       name="contact"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      netlify>
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
       <input type="hidden" name="bot-field" />
 
-      <TextInput name="name" />
-      <TextInput name="email" />
-
-      <TextInput name="message">
+      <Input name="name" />
+      <Input name="email" type="email" />
+      <Input name="message">
         <textarea name="message" rows="6" />
-      </TextInput>
+      </Input>
 
       <button type="submit" className="btn">
         Send

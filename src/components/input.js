@@ -2,7 +2,7 @@ import React from 'react';
 
 const Capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
 
-const TextInput = ({ name, children }) => (
+const Input = ({ name, type, children }) => (
   <div className="md:flex md:items-center mb-6">
     <div className="md:w-1/6">
       <label
@@ -12,13 +12,11 @@ const TextInput = ({ name, children }) => (
       </label>
     </div>
     <div className="md:w-2/3">
-      {children ? (
-        children
-      ) : (
-        <input type="text" className="w-full" name={name} />
+      {children || (
+        <input type={type || 'text'} className="w-full" name={name} />
       )}
     </div>
   </div>
 );
 
-export default TextInput;
+export default Input;
