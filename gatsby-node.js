@@ -8,7 +8,7 @@ const PATHS = {
 };
 
 const purgeCssConfig = {
-  pats: glob.sync(`${PATHS.src}/**/*.js`, { nodir: true }),
+  paths: glob.sync(`${PATHS.src}/**/*.js`, { nodir: true }),
   extractors: [
     {
       extractor: class {
@@ -16,15 +16,13 @@ const purgeCssConfig = {
           return content.match(/[A-Za-z0-9-_:/]+/g) || [];
         }
       },
-      extensions: ['js']
+      extensions: [`js`]
     }
   ]
 };
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
-  if (stage.includes('develop')) return;
-
-  if (stage.includes('build')) {
+  if (stage.includes(`build`)) {
     actions.setWebpackConfig({
       plugins: [new PurgeCssPlugin(purgeCssConfig)],
       optimization: {
