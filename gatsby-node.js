@@ -1,7 +1,35 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
+const glob = require('glob');
+const PurgeCssPlugin = require('purgecss-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-// You can delete this file if you're not using it
+const PATHS = {
+  src: path.join(__dirname, 'src')
+};
+
+const purgeCssConfig = {
+  pats: glob.sync(`${PATHS.src}/**/*.js`, { nodir: true }),
+  extractors: [
+    {
+      extractor: class {
+        static extract(content) {
+          return content.match(/[A-Za-z0-9-_:/]+/g) || [];
+        }
+      },
+      extensions: ['js']
+    }
+  ]
+};
+
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
+  if (stage.includes('develop')) return;
+
+  if (stage.includes('build')) {
+    actions.setWebpackConfig({
+      plugins: [new PurgeCssPlugin(purgeCssConfig)],
+      optimization: {
+        minimizer: [new OptimizeCSSAssetsPlugin()]
+      }
+    });
+  }
+};

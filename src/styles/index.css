@@ -1,0 +1,40 @@
+@tailwind preflight;
+@tailwind components;
+
+.btn {
+  @apply py-2;
+  @apply px-6;
+  @apply border;
+  @apply border-teal;
+  @apply shadow;
+  @apply font-semibold;
+  @apply bg-teal;
+  @apply text-white;
+}
+
+.btn:hover {
+  @apply text-teal-dark;
+  @apply bg-transparent;
+}
+
+input,
+textarea {
+  @apply bg-grey-lighter;
+  @apply appearance-none;
+  @apply border;
+  @apply border-grey-lighter;
+  @apply w-full;
+  @apply py-2;
+  @apply px-4;
+  @apply text-grey-darker;
+  @apply leading-tight;
+}
+
+input:focus,
+textarea:focus {
+  @apply outline-none;
+  @apply bg-grey-lightest;
+  @apply border-teal;
+}
+
+@tailwind utilities;
