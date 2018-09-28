@@ -32,7 +32,8 @@ const SecondPage = () => (
       name="contact"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field">
+      data-netlify-honeypot="bot-field"
+      netlify>
       <input type="hidden" name="bot-field" />
 
       <TextInput name="name" />
@@ -42,7 +43,9 @@ const SecondPage = () => (
         <textarea name="message" rows="6" />
       </TextInput>
 
-      <button className="btn">Send</button>
+      <button type="submit" className="btn">
+        Send
+      </button>
     </form>
   </Layout>
 );
