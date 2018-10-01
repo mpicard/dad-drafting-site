@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
+
 import './index.css';
 
 const IndexPage = () => (
@@ -46,7 +47,9 @@ const IndexPage = () => (
 
     {/* Action */}
     <div className="flex justify-center m-8">
-      <button className="btn text-xl py-10 px-20">Request a Quote</button>
+      <Link to="/contact" className="btn text-xl py-10 px-20">
+        Request a Quote
+      </Link>
     </div>
   </Layout>
 );
