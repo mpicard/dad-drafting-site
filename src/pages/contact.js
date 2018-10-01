@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Input from '../components/input';
 
-const SecondPage = () => (
+const ContactPage = () => (
   <Layout>
     <h1>Request a Quote or Contact Us</h1>
 
@@ -11,6 +11,7 @@ const SecondPage = () => (
       className="w-full my-8"
       name="contact"
       method="post"
+      action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
@@ -18,6 +19,7 @@ const SecondPage = () => (
 
       <Input name="name" />
       <Input name="email" type="email" />
+      <Input name="phone" />
       <Input name="message">
         <textarea name="message" rows="6" />
       </Input>
@@ -29,4 +31,4 @@ const SecondPage = () => (
   </Layout>
 );
 
-export default SecondPage;
+export default ContactPage;

@@ -1,10 +1,22 @@
-.first-sample,
-.second-sample,
-.third-sample {
+.first-sample {
   background-image: url('../assets/a1-showroom.png');
+  height: 20rem;
 }
 
-.first-sample {
-  /* background-position: */
-  height: 20rem;
+.second-sample,
+.third-sample {
+  height: 18rem;
+}
+
+.second-sample {
+  background-image: url('../assets/a6-lab.png');
+}
+
+.third-sample {
+  background-image: url('../assets/a6-lab.png');
+}
+
+p {
+  @apply leading-loose;
+  @apply text-justify;
 }

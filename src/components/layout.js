@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div className="container mx-auto pt-24">{children}</div>
+        <div className="container flex flex-col mx-auto pt-24">{children}</div>
       </>
     )}
   />

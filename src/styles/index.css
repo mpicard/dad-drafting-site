@@ -2,6 +2,7 @@
 @tailwind components;
 
 .btn {
+  @apply block;
   @apply py-2;
   @apply px-6;
   @apply border;
