@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://compass-millwork-drawings.netlify.com/* http://www.compassmillworkdrawings.ca/:splat 301!
