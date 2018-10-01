@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import './header.css';
 
 const Header = ({ siteTitle }) => (
-  <nav className="bg-black">
+  <nav className="bg-black fixed w-full">
     <div className="flex flex-wrap items-center mx-auto p-4">
       <Link to="/" className="flex items-center no-underline text-white">
         <span className="font-bold text-xl tracking-tight">{siteTitle}</span>

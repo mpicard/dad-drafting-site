@@ -22,7 +22,7 @@ const purgeCssConfig = {
 };
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
-  if (stage.includes(`build`)) {
+  if (stage == 'build') {
     actions.setWebpackConfig({
       plugins: [new PurgeCssPlugin(purgeCssConfig)],
       optimization: {

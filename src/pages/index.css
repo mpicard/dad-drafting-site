@@ -1,0 +1,10 @@
+.first-sample,
+.second-sample,
+.third-sample {
+  background-image: url('../assets/a1-showroom.png');
+}
+
+.first-sample {
+  /* background-position: */
+  height: 20rem;
+}
