@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
           />
         </svg>
 
-        <span className="font-bold text-2xl tracking-tight">{siteTitle}</span>
+        <h1 className="font-bold text-2xl tracking-tight">{siteTitle}</h1>
       </Link>
 
       <div className="pl-8 ">

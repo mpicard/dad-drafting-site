@@ -21,10 +21,19 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Millwork drafting services' },
+            {
+              name: 'description',
+              content:
+                'Compass Millwork Drawings provides high quality drawings ' +
+                'for millworks. With over 20 years of experience in the ' +
+                'millwork industry, CMD provides expert drawing services ' +
+                'in Northern Ontario.'
+            },
             {
               name: 'keywords',
-              content: 'compass millwork drafting design northern ontario'
+              content:
+                'compass, millwork, drawing, drafting, design, northern ontario' +
+                ', ontario, canada, north bay'
             }
           ]}>
           <html lang="en" />
