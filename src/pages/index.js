@@ -10,9 +10,9 @@ const IndexPage = () => (
     <div className="first-sample m-auto block w-full bg-contain bg-center bg-no-repeat" />
 
     <p className="text-2xl font-light tracking-wide p-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam harum cum
-      rem ut facilis voluptatum porro minus ipsum? Enim repellat itaque fugiat
-      doloribus at cum nesciunt ut labore aliquid mollitia.
+      Over 40 years experience in high quality commercial drafting. Competitive
+      pricing on large or small projects with quick turn around. Our goal is to
+      provide the highest level of quality and service.
     </p>
 
     {/* Second Sample */}
@@ -22,10 +22,10 @@ const IndexPage = () => (
       </div>
       <div className="w-1/2 m-8">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet
-          optio, natus corrupti id accusantium modi hic reprehenderit esse
-          repudiandae error fugiat nostrum exercitationem quia. Omnis
-          perferendis nemo itaque. Totam!
+          Professional drawings for kitchen cabinets and architectural millwork.
+          With over 40 years experience in cabinetry, we provide floor plans,
+          elevations, section details, finish and hardware schedules for all
+          projects.
         </p>
       </div>
     </div>
@@ -33,14 +33,17 @@ const IndexPage = () => (
     {/* Third Sample */}
     <div className="flex items-center">
       <div className="w-1/2 m-8">
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          laborum nisi obcaecati, quidem ex beatae placeat maxime unde provident
-          veniam eveniet cumque at consequuntur vel ea inventore id praesentium
-          quam.
+        <p>
+          Drawings or specifications can be sent over email or DropBox. We will
+          provide a quotation and timeframe. Once approved and downpayment is
+          received, we will draw and send a copy for review. Any corrections
+          will be drawn and sent for review again. Once the final copy and
+          payment is complete, all the CAD files will be supplied. Please
+          include shop standards.
         </p>
       </div>
       <div className="w-1/2 m-8">
+        {/* TODO: update third-sample picture */}
         <div className="third-sample block max-w-full bg-center bg-contain bg-no-repeat" />
       </div>
     </div>

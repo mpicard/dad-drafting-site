@@ -1,16 +1,32 @@
 @tailwind preflight;
 @tailwind components;
 
+.header-link {
+  display: inline-block;
+  @apply font-thin;
+  @apply mt-4;
+  @apply mr-6;
+  @apply no-underline;
+  @apply text-grey-light;
+}
+
+@screen md {
+  .header-link {
+    @apply mt-0;
+  }
+}
+
 .btn {
   @apply block;
-  @apply py-2;
-  @apply px-6;
+  @apply py-4;
+  @apply px-12;
   @apply border;
   @apply border-teal;
   @apply shadow;
   @apply font-semibold;
   @apply bg-teal;
   @apply text-white;
+  @apply no-underline;
 }
 
 .btn:hover {

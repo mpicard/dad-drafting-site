@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
             {
               name: 'description',
               content:
-                'Compass Millwork Drawings provides high quality drawings ' +
+                'Compass Millwork Drawings provides high quality CAD drawings ' +
                 'for millworks. With over 20 years of experience in the ' +
                 'millwork industry, CMD provides expert drawing services ' +
                 'in Northern Ontario.'
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
               name: 'keywords',
               content:
                 'compass, millwork, drawing, drafting, design, northern ontario' +
-                ', ontario, canada, north bay'
+                ', ontario, canada, north bay, CAD, AutoCAD, Solidworks'
             }
           ]}>
           <html lang="en" />
